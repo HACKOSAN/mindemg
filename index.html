@@ -1,49 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="icon" href="favicon.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Vex Minecraft Server</title>
-</head>
-<body>
-    <div id="anim">
-        <!-- Particles -->
-        <div id="particles-js"></div>
-        <header>
-            <h1>Vex Minecraft Server</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="about">
-                <h2>About Vex Minecraft Server</h2>
-                <p>We are a Minecraft community server that offers a fun and friendly environment for players to enjoy. Whether you're interested in Redstone, Creative mode, or mini-games, we have something for everyone!</p>
-            </section>
-            <section id="services">
-                <h2>Our Services</h2>
-                <ul>
-                    <li>Redstone</li>
-                    <li>Creative Mode</li>
-                    <li>Mini-Games</li>
-                </ul>
-            </section>
-        </main>
-    </div>
-    <footer>
-        <p>Copyright © 2023 Vex Minecraft Server</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script>
-        particlesJS.load('particles-js', 'particles.json', function() {
-            console.log('Particles.js loaded - callback');
-        });
-    </script>
-</body>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>MindeMG | Classicc</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul> 
+					<li><a href="#">Home</a></li>
+					<li><a href="mindemg.classicc.tk">About</a></li>
+					<li><a href="blog.classicc.tk">Blog</a></li>
+					<li><a href="https://discord.io/mindemg">Discord</a></li>
+				</ul>
+			</nav>
+			<div class="header-text">
+				<h2>MindeMG | Classicc</h2>
+			</div>
+		</header>
+		<main>
+			<img src="cover.jpg" class="cover-image">
+				<div class="hero-text">
+					<h2>Welcome to MindeMG</h2>
+					<p>We are a community of Minecraft players dedicated to providing a fun and engaging experience for all. Join us today and explore our world!</p>					  
+				</div>
+			</section>
+			<section class="features">
+				<h2>Our Features</h2>
+				<div class="feature">
+					<i class="fas fa-users"></i>
+					<h3>Friendly Community</h3>
+					<p>Our community is welcoming and supportive of new players. Join us and make new friends!</p>
+				</div>
+				<div class="feature">
+					<i class="fas fa-globe"></i>
+					<h3>Our Services.</h3>
+					<p>Our Services are working on Survival, Factions, Bedwars, Skywars</p>
+				</div>
+				<div class="feature">
+					<i class="fas fa-cubes"></i>
+					<h3>Want to help us out?</h3>
+					<p>Join our Discord Server, and contact us!</p>
+				</div>
+				<div class="feature">
+					<i class="fas fa-clock"></i>
+					<h3>Minecraft Server</h3>
+					<p>Server Address: <span id="server-address">mc.classicc.tk</span></p>
+					<p>Server Status: <span id="server-status">Loading...</span></p>
+					<p>Players Online: <span id="player-count">Loading...</span></p>
+				  </div>
+				  
+				  
+			</section>
+		</main>
+		<footer>
+			<div class="footer-text">
+				<p>Copyright © 2023 MindeMG</p>
+			</div>
+			<section class="social">
+				<a href="https://www.facebook.com/Mindemghost"><i class="fab fa-facebook"></i></a>
+				<a href="https://discord.io/mindemg"><i class="fab fa-discord"></i></a>
+			</section>
+		</footer>
+		<script src="script.js"></script>
+	</body>
 </html>
