@@ -5,7 +5,7 @@
 - To get started, clone this repository onto your local machine using the command:
 
 ```bash
-git clone https://github.com/lenvxcodes/classicc.tk.git
+git clone https://github.com/lenvxcodes/mindemg
 ```
 - You can then open the files in your favorite text editor to make modifications to the code.
 
