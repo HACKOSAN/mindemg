@@ -1,4 +1,4 @@
-#Classicc.tk
+# Classicc.tk
 - Welcome to the official repository of Classicc.tk, the online community for Mindemg Minecraft server! This repository hosts the source code of the website, which is built using HTML, CSS, and JavaScript.
 
 # Getting Started
