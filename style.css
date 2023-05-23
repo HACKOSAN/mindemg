@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -11,60 +13,37 @@ body {
 }
 
 header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px;
-	background-color: #1a1a1a;
-	color: white;
-  }
-  
-  header h2 {
-	font-size: 26px;
-	margin: 0;
-	padding: 0;
-	text-align: center
-  }
-  
-  header nav {
-	display: flex;
-	white-space: nowrap;
-  }
-  
-  header nav a {
-	color: white;
-	text-decoration: none;
-	margin-right: 20px;
-  }
-  
-  header nav a:hover {
-	text-decoration: underline;
-  }
-  
-nav {
+    background-color: #1a1a1a;
     width: 100%;
+    position: fixed;
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    padding: 20px 20px ;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li a {
-    display: block;
-    padding: 0.5rem 1rem;
+  
+.logo{
     color: #fff;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+  
+.navigation a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-right: 30px;
 }
 
-nav ul li a:hover {
-    background-color: #1A1A1A;
-    color: #fff;
+.navigation a:hover{
+    text-decoration: underline;
 }
+  
 
 .hero {
     position: relative;
@@ -76,6 +55,12 @@ nav ul li a:hover {
 }
 
 .hero-text {
+    /* round corners*/
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    /**/
     position: absolute;
     top: 50%;
     left: 50%;
@@ -84,7 +69,7 @@ nav ul li a:hover {
     color: #fff;
     padding: 2rem;
     text-align: center;
-    width: 70%;
+    width: 90%;
     max-width: 600px;
 }
 
@@ -123,6 +108,20 @@ nav ul li a:hover {
     padding: 2rem;
 }
 
+.title {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 2.2em;
+    font-weight: 800;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .feature {
   background-color: #222;
   color: #fff;
@@ -162,3 +161,60 @@ nav ul li a:hover {
     height: 700px;
     object-fit: cover;
   }
+
+/* footer fixed dumass*/
+.footer {
+    background-color: #242323;
+    color: #fff9f9;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #fff;
+}
+
+.footer .social-icons a{
+    justify-content: space-between;
+    padding-left: 10px;
+    font-size: 2em;
+    padding: 10px
+}
+
+
+.fa-discord {
+    color: #fff;
+    transition: 0.5s ease;
+}
+.fa-discord:hover {
+    color: #7289DA  ;
+    transform: scale(1.5);
+    
+}
+
+.fa-facebook {
+    color: #fff;
+    transition: 0.5s ease;
+
+}
+.fa-facebook:hover {
+    transform: scale(1.5);
+    color: #1877F2;
+}
+
+.fa-github{
+    color: #fff;
+    transition: 0.5s ease;
+}
+.fa-github:hover {
+    color: #000000;
+    transform: scale(1.5);
+
+}
+
